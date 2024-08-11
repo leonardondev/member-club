@@ -1,0 +1,43 @@
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  & section {
+    background-color: var(--gray-100);
+    border-radius: 1rem;
+    border: 1px solid var(--gray-300);
+  }
+}
+
+
+@media (width >= 60em) {
+  main {
+    display: grid;
+    grid-template-areas: 
+      "user slots"
+      "history slots"
+      "history progress"
+    ;
+    grid-template-columns: 20rem 1fr;
+    grid-template-rows: auto 1fr auto;
+    row-gap: 1rem;
+    column-gap: 1.5rem;
+
+    & .user {
+      grid-area: user;
+      
+    }
+    & .slots {
+      grid-area: slots;
+
+    }
+    & .history {
+      grid-area: history;
+    }
+    & .progress {
+      grid-area: progress;
+
+    }
+  }
+}

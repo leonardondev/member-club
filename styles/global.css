@@ -8,7 +8,8 @@
   /* colors */
   --pink: #D658B3;
   --green: #45B442;
-  --gradient: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
+  --avatar-gradient: conic-gradient(from -41.42deg at 50% 52.91%, #D658B3 -0.7deg, #AF74DE 47.25deg, #6B84DE 90.53deg, #5DCAB7 135.43deg, #45B442 180.22deg, #5EC6B9 223.69deg, #698DD9 264.48deg, #B173DC 314.51deg, #D658B3 359.27deg, #D658B3 359.3deg, #AF74DE 407.25deg);
+  --progress-gradient: linear-gradient(90deg, #2DAA6E 0%, #2DAAAA 33.33%, #856CCF 66.67%, #D658B3 100%);
 
   --white: #FFFFFF;
   --gray-100: #F4F1F2;
@@ -30,6 +31,20 @@
   --text-xs: 400 0.75rem/140% var(--font-family);
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  margin-block: 0.75rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--gray-300);
+  border-radius: 4px;
+}
+
 body {
   font: var(--text-md);
   color: var(--gray-500);
@@ -46,8 +61,16 @@ img {
   max-width: 100%;
 }
 
+h1, h2, h3 {
+  font: inherit;
+}
+
 i {
   font-size: inherit;
+}
+
+ul[role="list"] {
+  list-style: none;
 }
 
 .container {

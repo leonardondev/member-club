@@ -1,4 +1,4 @@
-header {
+.container > header {
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
@@ -54,6 +54,7 @@ header {
     border-radius: 0.5rem;
     border: none;
     background-color: var(--gray-700);
+    opacity: 60%;
     display: grid;
     place-items: center;
   
@@ -65,14 +66,14 @@ header {
   }
 }
 
-@media (width >= 42em) {
+@media (width >= 45em) {
   .input-wrapper {
     max-width: 25rem;
   }
 }
 
 @media (width >= 60em) {
-  header {
+  .container > header {
     padding-top: 4rem;
   }
   

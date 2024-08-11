@@ -1,2 +1,7 @@
 @import url(global.css);
 @import url(header.css);
+@import url(main.css);
+@import url(profile.css);
+@import url(slots.css);
+@import url(history.css);
+@import url(progress.css);
