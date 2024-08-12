@@ -24,18 +24,19 @@ main {
     row-gap: 1rem;
     column-gap: 1.5rem;
 
-    & .user {
+    & #user {
       grid-area: user;
       
     }
-    & .slots {
+    & #slots {
       grid-area: slots;
 
     }
-    & .history {
+    & #history {
       grid-area: history;
     }
-    & .progress {
+    
+    & #progress {
       grid-area: progress;
 
     }

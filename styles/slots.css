@@ -1,4 +1,4 @@
-.slots {
+#slots {
   padding: 1.5rem 1.25rem;
 
   & header {
@@ -58,7 +58,7 @@
 }
 
 @media (width <= 45em) {
-  .slots {
+  #slots {
     & ul {
       max-width: 20rem;
     }
@@ -67,7 +67,7 @@
 
 
 @media (width >= 60em) {
-  .slots {
+  #slots {
     padding: 2.25rem 2rem 2rem;
     
     & header {

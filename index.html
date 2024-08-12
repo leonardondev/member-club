@@ -28,47 +28,41 @@
     </header>
 
     <main>
-      <section class="user">
+      <section id="user">
         <div class="user-image">
-          <img src="https://xsgames.co/randomusers/assets/avatars/female/1.jpg" alt="">
+          <!-- <img src="https://xsgames.co/randomusers/assets/avatars/female/1.jpg" alt=""> -->
         </div>
         <div class="profile">
-          <h1>Natália Miranda</h1>
-          <span>Cliente desde 18/09/2023</span>
+          <!-- <h1>Natália Miranda</h1> -->
+          <!-- <span>Cliente desde 18/09/2023</span> -->
         </div>
       </section>
-      <section class="slots">
+      <section id="slots">
         <header>
           <div>
             <h2>Cartão Fidelidade</h2>
             <p>Ao fazer cortes de cabelo, o décimo sai de graça!</p>
           </div>
-          <span>ID: 124-537-835-230</span>
+          <span id="user-id"></span>
         </header>
 
         <ul role="list" class="stamps">
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-          <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li>
-          <li></li>
-          <li></li>
-          <li><i class="ph-fill ph-gift"></i></li>
+          <!-- <li><img src="assets/pinCheck.png" alt="Desenho de selo"></li> -->
+          <!-- <li></li> -->
+          <!-- <li><i class="ph-fill ph-gift"></i></li> -->
         </ul>
       </section>
-      <section class="progress">
+      <section id="progress">
         <div>
           <header>
-            <strong>3</strong>
+            <strong></strong>
             <h2>cortes restantes</h2>
           </header>
           <div>
-            <div class="progress-bar"></div>
-            <small>7 de 10</small>
+            <div id="progress-bar-track">
+              <div id="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"></div>
+            </div>
+            <small class="progress-label"></small>
           </div>
         </div>
 
@@ -76,13 +70,14 @@
           <img src="assets/pinGift.png" alt="desenho de presente">
         </div>
       </section>
-      <section class="history">
+      <section id="history">
         <header>
           <h2>Histórico</h2>
           <span>7 cortes</span>
         </header>
 
-        <ul role="list">
+        <ul role="list" class="appointment-list">
+          <!-- 
           <li>
             <div class="appointment">
               <strong>29/04/2024</strong>
@@ -90,51 +85,12 @@
             </div>
             <i class="ph ph-seal-check"></i>
           </li>
-          <li>
-            <div class="appointment">
-              <strong>16/03/2024</strong>
-              <span>17:00</span>
-            </div>
-            <i class="ph ph-seal-check"></i>
-          </li>
-          <li>
-            <div class="appointment">
-              <strong>01/02/2024</strong>
-              <span>17:30</span>
-            </div>
-            <i class="ph ph-seal-check"></i>
-          </li>
-          <li>
-            <div class="appointment">
-              <strong>03/01/2024</strong>
-              <span>15:00</span>
-            </div>
-            <i class="ph ph-seal-check"></i>
-          </li>
-          <li>
-            <div class="appointment">
-              <strong>28/11/2023</strong>
-              <span>14:00</span>
-            </div>
-            <i class="ph ph-seal-check"></i>
-          </li>
-          <li>
-            <div class="appointment">
-              <strong>23/10/2023</strong>
-              <span>14:00</span>
-            </div>
-            <i class="ph ph-seal-check"></i>
-          </li>
-          <li>
-            <div class="appointment">
-              <strong>18/09/2023</strong>
-              <span>11:00</span>
-            </div>
-            <i class="ph ph-seal-check"></i>
-          </li>
+           -->
         </ul>
       </section>
     </main>
+
+    <script src="main.js"></script>
   </div>
 </body>
 

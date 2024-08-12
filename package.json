@@ -1,0 +1,14 @@
+{
+  "name": "member-club",
+  "version": "1.0.0",
+  "description": "Página que exibe o cartão fidelidade de um cliente para cortes de cabelo",
+  "scripts": {
+    "server": "json-server db.json --port 3333"
+  },
+  "keywords": ["MBA", "fullstack", "challenge", "javascript"],
+  "author": "Leonardo do Nascimento",
+  "license": "MIT",
+  "dependencies": {
+    "json-server": "^1.0.0-beta.1"
+  }
+}
