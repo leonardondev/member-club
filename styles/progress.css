@@ -69,7 +69,7 @@
     width: 0%;
     background: var(--progress-gradient);
     border-radius: 0.25rem;
-    transition: width 0.3s ease;
+    transition: width 500ms ease;
   }
 }
 

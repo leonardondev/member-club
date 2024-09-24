@@ -46,12 +46,14 @@
 
       & img {
         width: 2.5rem;
+        animation: image-appear 400ms linear backwards;
       }
 
       & i {
         font-size: 1.5rem;
         color: var(--gray-500);
         opacity: 35%;
+        animation: image-appear 400ms linear backwards;
       }
     }
   }
@@ -102,4 +104,10 @@
     }
   }
 
+}
+
+@keyframes image-appear {
+  from {
+    scale: 0;
+  }
 }

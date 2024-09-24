@@ -6,9 +6,6 @@ const profile = document.querySelector("#user .profile")
 const userId = document.getElementById("user-id")
 const slots = document.querySelector("#slots ul")
 
-const lastSlotEmpty = document.createElement("li")
-lastSlotEmpty.innerHTML = '<i class="ph-fill ph-gift"></i>'
-
 const progressRemaining = document.querySelector("#progress header strong")
 const progressBar = document.querySelector("#progress-bar")
 const progressLabel = document.querySelector("#progress .progress-label")
@@ -66,6 +63,7 @@ addEventListener("submit", async (event) => {
       const pinCheck = document.createElement("img")
       pinCheck.setAttribute("src", "assets/pinCheck.png")
       pinCheck.setAttribute("alt", "Desenho de selo")
+      pinCheck.style.animationDelay = `${100*i}ms`
 
       if(slots.children[i].hasChildNodes()) {
         slots.children[i].removeChild(slots.children[i].firstChild);
@@ -126,6 +124,7 @@ function clearProfile() {
   progressLabel.textContent = "0 de 10"
   progressBar.setAttribute("aria-valuemax", "10");
   progressBar.setAttribute("aria-valuenow", "0");
+  updateProgressBar()
 
   /* clear section history */
   historyCounter.textContent = "0 cortes"
@@ -143,6 +142,9 @@ function clearSlots(length = 10) {
     const emptySlot = document.createElement("li")
     slots.append(emptySlot)
   }
+
+  const lastSlotEmpty = document.createElement("li")
+  lastSlotEmpty.innerHTML = '<i class="ph-fill ph-gift"></i>'
   slots.append(lastSlotEmpty)
 }
 
