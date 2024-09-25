@@ -41,6 +41,10 @@
     &::placeholder {
       color: var(--gray-500);
     }
+
+    &::-webkit-calendar-picker-indicator {
+      display: none !important;
+    }
   }
 
   & button {
