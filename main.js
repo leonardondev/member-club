@@ -76,7 +76,7 @@ addEventListener("submit", async (event) => {
     progressRemaining.textContent = String(cutsRemaining)
     progressLabel.textContent = `${totalCuts} de ${cutsNeeded}`
     progressBar.setAttribute("aria-valuenow", `${totalCuts}`);
-    updateProgressBar()
+    updateProgressBar(totalCuts)
 
     /* section history */
     const historyLength = client.appointmentHistory.length
@@ -148,12 +148,21 @@ function clearSlots(length = 10) {
   slots.append(lastSlotEmpty)
 }
 
-function updateProgressBar() {
+function updateProgressBar(totalCuts) {
   const valueNow = progressBar.getAttribute("aria-valuenow");
   const max = progressBar.getAttribute("aria-valuemax");
+
+  const timeToFillInMiliSeconds = totalCuts ? totalCuts * 100 : 500
 
   const widthPercentage = (valueNow / max) * 100;
 
   progressBar.style.width = widthPercentage + "%";
+  progressBar.style.transition = `width ${timeToFillInMiliSeconds}ms ease`
+
+  if(widthPercentage === 100) {
+    setTimeout(() => {
+      alert("Parabéns! Seu próximo corte é gratuito!")
+    }, timeToFillInMiliSeconds + 500)
+  }
 }
 
